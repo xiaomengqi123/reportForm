@@ -1,6 +1,6 @@
 # reportform
 ```
- vue-cli3 + vant（按需引入）+ stylu + rem适配 +vueRouter
+ 用vue-echarts实现图表
 ```
 
 ## Project setup
@@ -28,3 +28,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 # vueBaseFrame
 # -
 # vueEcharts
+# reportForm
