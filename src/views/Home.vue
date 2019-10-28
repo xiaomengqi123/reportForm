@@ -46,28 +46,25 @@
         </van-tab>
       </van-tabs>
      </div>
-     <div class="tabBarPart">
+     <!-- <div class="tabBarPart">
        <van-tabbar v-model="active">
-        <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-        <van-tabbar-item icon="search">标签</van-tabbar-item>
-        <van-tabbar-item icon="friends-o" info="5">标签</van-tabbar-item>
-        <van-tabbar-item icon="setting-o" info="20">标签</van-tabbar-item>
+        <van-tabbar-item icon="shop-o">销售</van-tabbar-item>
+        <van-tabbar-item icon="newspaper-o">日报</van-tabbar-item>
+        <van-tabbar-item icon="hot-o">TOP款</van-tabbar-item>
        </van-tabbar>
-     </div>
+     </div> -->
 
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Tab, Tabs, Tabbar, TabbarItem,DropdownMenu, DropdownItem,SwitchCell,Button,Popup,Picker  } from 'vant';
+import { Tab, Tabs,DropdownMenu, DropdownItem,SwitchCell,Button,Popup,Picker  } from 'vant';
 
 @Component({
   components: {
     [Tab.name]:Tab,
     [Tabs.name]:Tabs,
-    [Tabbar.name]:Tabbar,
-    [TabbarItem.name]:TabbarItem,
     [DropdownMenu.name]:DropdownMenu,
     [DropdownItem.name]:DropdownItem,
     [SwitchCell.name]:SwitchCell,
@@ -78,7 +75,6 @@ import { Tab, Tabs, Tabbar, TabbarItem,DropdownMenu, DropdownItem,SwitchCell,But
 })
 export default class Home extends Vue {
   titleNumber=3
-  active=2
   tabList=[{'name':'全国'},{'name':'重要'},{'name':'销售'},{'name':'奥莱'}]
   extend = {
         'xAxis.0.axisLabel.rotate': 45,
